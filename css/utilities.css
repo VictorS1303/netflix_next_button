@@ -1,0 +1,16 @@
+:root
+{
+    /* Colors */
+    --body-background-color: #fff;
+    --primary-text-color: #e50914;
+    --button-background-color: #fff;
+    --button-animation-background-color: #fff;
+    --overlay-background-color: rgba(0, 0, 0, .3);
+    
+    /* Radii */
+    --base-border-radius: 10px;
+    
+    /* Shadows */
+    --text-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
