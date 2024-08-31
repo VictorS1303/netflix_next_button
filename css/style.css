@@ -1,5 +1,6 @@
 .container.video-container
 {
+    position: relative;
     height: 500px;
     width: 800px;
     border-radius: var(--base-border-radius);
@@ -10,5 +11,26 @@
         width: 100%;
         object-fit: cover;
         border-radius: inherit;
+    }
+
+    & .overlay
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--overlay-background-color);
+        opacity: 0;
+        z-index: 0;
+        cursor: pointer;
+        transition: opacity .15s ease-in;
+
+        :not(&) .container.video-container:hover .overlay
+        {
+            opacity: 1;
+            z-index: 1;
+            transition: opacity .15s ease-in;
+        }
     }
 }
